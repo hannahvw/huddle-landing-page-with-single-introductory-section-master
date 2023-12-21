@@ -1,5 +1,5 @@
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 74%); }
 
     * {
         margin: 0;
@@ -7,4 +7,78 @@
         box-sizing: border-box;
     }
 
-    
+:root {
+    --primary-color-600: hsl(257, 40%, 49%);
+    --primary-color-200: hsl(300, 69%, 71%);
+    --ff-body: 'Open Sans', sans-serif;
+    --ff-heading: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color-600);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    border: 1px solid lime;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1, p, i {
+    color: #fff;
+}
+
+h1 {
+    font-family: var(--ff-heading);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+p {
+    font-family: var(--ff-body);
+    font-weight: 400;
+    line-height: 1.40rem;
+    font-size: 0.975rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    color: var(--primary-color-600);
+    background-color: #fff;
+    padding: 15px 75px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 10px 10px 10px;
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+i {
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 0.5rem;
+    font-weight: 400;
+}
+
+
