@@ -35,10 +35,9 @@ img {
 }
 
 .logo {
-  margin: 5% 0 0 -55px;
+  margin: 10% 0 0 -55px;
   max-width: 65%;
-}
-
+} 
 .container {
   width: 80%;
   text-align: center;
@@ -65,7 +64,7 @@ h1 {
 p {
   font-family: var(--ff-body);
   font-weight: 400;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   font-size: 0.985rem;
   margin-bottom: 1rem;
 }
@@ -76,7 +75,7 @@ button {
   padding: 15px 75px;
   border-radius: 25px;
   border: none;
-  box-shadow: 10px 10px 10px;
+  box-shadow: 10px 10px 10px var(--primary-color-600);
   margin-bottom: 2rem;
 }
 
@@ -92,4 +91,56 @@ i {
   border-radius: 50%;
   padding: 5px 5px 5px 5px;
   font-weight: 400;
+}
+
+button:hover,
+button:active {
+  cursor: pointer;
+  background-color: var(--primary-color-200);
+  color: #fff;
+}
+
+i:hover {
+  color: var(--primary-color-200);
+  border: 1px solid var(--primary-color-200);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background: url(images/bg-desktop.svg) no-repeat;
+    background-color: var(--primary-color-600);
+    max-height: 100vh;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    top: -8%;
+    left: 12%;
+    max-width: 25%;
+  }
+
+  .container {
+    width: 100vw;
+    height: 80vh;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    outline: 1px solid lime;
+  }
+
+  .text-content {
+    text-align: left;
+    margin-left: 1rem;
+    position: relative;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: end;
+  }
+
+  i {
+    text-align: center;
+  }
 }
