@@ -117,8 +117,42 @@ i:hover {
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
+   body {
+    background: url(images/bg-desktop.svg) no-repeat;
+    background-color: var(--primary-color-600);
+   
+  }
 
+  main {
+    max-height: 100vh;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    min-height: 75vh;
+  }
+    
+  .column {
+    flex: 50%;
+  }
+
+  .text-content {
+    text-align: left;
+    margin-left: 1rem;
+    position: relative;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: end;
+  }
+
+  i {
+    text-align: center;
+  }
 }
 
 
@@ -140,13 +174,6 @@ i:hover {
     position: relative;
   }
 
-  .logo {
-    position: absolute;
-    top: -8%;
-    left: 12%;
-    max-width: 25%;
-  }
-
   .container {
     width: 100vw;
     height: 80vh;
@@ -156,19 +183,10 @@ i:hover {
     outline: 1px solid lime;
   }
 
-  .text-content {
-    text-align: left;
-    margin-left: 1rem;
-    position: relative;
-  }
+  
 
-  .social-icons {
-    display: flex;
-    justify-content: end;
-  }
+  
 
-  i {
-    text-align: center;
-  }
+  
 }
 */
