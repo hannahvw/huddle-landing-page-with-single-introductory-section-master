@@ -79,22 +79,35 @@ button {
   border-radius: 25px;
   font-size: 0.75rem;
   font-family: var(--font-family-headings);
+  box-shadow: 0 0 2px black;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-300);
+  color: white;
 }
 
 .social-icons ul {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
 }
 
 .social-icons ul li {
-    list-style: none;
+  list-style: none;
 }
 
 i {
-    border: 1px solid white;
-    border-radius: 50%;
-    font-size: 0.7rem;
-    padding: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 8px;
+}
+
+i:hover {
+  cursor: pointer;
+  color: var(--primary-color-300);
+  border: 1px solid var(--primary-color-300);
 }
